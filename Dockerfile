@@ -17,7 +17,7 @@ FROM gcr.io/distroless/static-debian12:nonroot
 WORKDIR /app
 
 COPY --from=builder /out/goose-server /app/goose-server
-COPY server_config.example.json /app/server_config.example.json
+COPY server_config.example.json /app/server_config.json
 
 EXPOSE 8443
 
